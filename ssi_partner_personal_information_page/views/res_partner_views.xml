@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2020 OpenSynergy Indonesia
+     Copyright 2020 Simetri Sinergi
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="res_partner_view_form_personal_information_page" model="ir.ui.view">
+        <field name="name">res.partner.form.personal.information.page</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//page[@name='contact_addresses']" position="after">
+                    <page
+                        name="personal_information"
+                        string="Personal Information"
+                        attrs="{'invisible': [('is_company','=',True)]}"
+                    >
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+</odoo>
