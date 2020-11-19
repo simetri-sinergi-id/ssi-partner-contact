@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2020 OpenSynergy Indonesia
+     Copyright 2020 Simetri Sinergi
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+  <record id="partner_religion_demo1" model="partner.religion">
+    <field name="name">Islam</field>
+    <field name="code">R01</field>
+  </record>
+  <record id="partner_religion_demo2" model="partner.religion">
+    <field name="name">Kristen Katholik</field>
+    <field name="code">R02</field>
+  </record>
+  <record id="partner_religion_demo3" model="partner.religion">
+    <field name="name">Kristen Protestan</field>
+    <field name="code">R03</field>
+  </record>
+  <record id="partner_religion_demo4" model="partner.religion">
+    <field name="name">Hindu</field>
+    <field name="code">R04</field>
+  </record>
+  <record id="partner_religion_demo5" model="partner.religion">
+    <field name="name">Budha</field>
+    <field name="code">R05</field>
+  </record>
+</odoo>
