@@ -1,0 +1,24 @@
+# Copyright 2018 OpenSynergy Indonesia
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+
+from odoo import fields, models
+
+
+class PartnerReligion(models.Model):
+    _name = "partner.religion"
+    _description = "Religion"
+
+    name = fields.Char(
+        string="Religion",
+        required=True,
+    )
+    code = fields.Char(
+        string="Code",
+    )
+    note = fields.Text(
+        string="Note",
+    )
+    active = fields.Boolean(
+        string="Active",
+        default=True,
+    )
