@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="res_partner_view_form">
+        <field name="name">res.partner form religion</field>
+        <field name="model">res.partner</field>
+        <field
+            name="inherit_id"
+            ref="ssi_partner_personal_information_page.res_partner_view_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='personal_information']" position="inside">
+                <field name="religion_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
