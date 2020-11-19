@@ -5,7 +5,7 @@
         <field name="model">res.partner</field>
         <field
             name="inherit_id"
-            ref="ssi_partner_personal_information_page.res_partner_view_form_personal_information_page"
+            ref="ssi_partner_personal_information_page.res_partner_view_form"
         />
         <field name="arch" type="xml">
             <xpath expr="//page[@name='personal_information']" position="inside">
