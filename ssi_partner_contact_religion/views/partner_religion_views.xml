@@ -1,46 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2020 OpenSynergy Indonesia
+     Copyright 2020 Simetri Sinergi
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 <odoo>
 
-    <record model="ir.ui.view" id="partner_religion_view_tree">
-        <field name="name">partner.religion Tree</field>
-        <field name="model">partner.religion</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-                <field name="code"/>
-            </tree>
-        </field>
-    </record>
+  <record id="partner_religion_view_tree" model="ir.ui.view">
+    <field name="name">partner.religion Tree</field>
+    <field name="model">partner.religion</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="code" />
+      </tree>
+    </field>
+  </record>
 
-    <record model="ir.ui.view" id="partner_religion_view_form">
-        <field name="name">partner.religion Form</field>
-        <field name="model">partner.religion</field>
-        <field name="arch" type="xml">
-            <form>
-                <group name="header_1" colspan="4" col="2">
-                    <field name="name"/>
-                    <field name="code"/>
-                    <field name="active"/>
-                </group>
-                <notebook colspan="4">
-                    <page name="note" string="Note">
-                        <field name="note" colspan="4" nolabel="1" placeholder="Add note here ..."/>
-                    </page>
-                </notebook>
-            </form>
-        </field>
-    </record>
+  <record id="partner_religion_view_form" model="ir.ui.view">
+    <field name="name">partner.religion Form</field>
+    <field name="model">partner.religion</field>
+    <field name="arch" type="xml">
+      <form>
+        <header>
+        </header>
+        <sheet>
+          <div class="oe_button_box" name="button_box" />
+          <group name="header_1" colspan="4" col="2">
+            <field name="name" />
+            <field name="code" />
+            <field name="active" widget="boolean_toggle" />
+          </group>
+          <notebook colspan="4">
+            <page name="note" string="Note">
+              <field
+                                name="note"
+                                colspan="4"
+                                nolabel="1"
+                                placeholder="Add note here ..."
+                            />
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
 
-    <record model="ir.actions.act_window" id="partner_religion_action">
-        <field name="name">Religion</field>
-        <field name="res_model">partner.religion</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+  <record model="ir.actions.act_window" id="partner_religion_action">
+    <field name="name">Religion</field>
+    <field name="res_model">partner.religion</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 
-    <menuitem id="partner_religion_menu"
+  <menuitem
+        id="partner_religion_menu"
         name="Religion"
         parent="contacts.res_partner_menu_config"
         action="partner_religion_action"
-        sequence="10"/>
+        sequence="10"
+    />
 
 </odoo>
