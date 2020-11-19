@@ -15,10 +15,8 @@
                         name="personal_information"
                         string="Personal Information"
                         attrs="{'invisible': [('is_company','=',True)]}"
-                        >
-                        <group
-                            name="personal_information"
-                            >
+                    >
+                        <group name="personal_information">
                         </group>
                     </page>
 
