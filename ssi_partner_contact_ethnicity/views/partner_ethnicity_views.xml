@@ -31,11 +31,11 @@
           <notebook colspan="4">
             <page name="note" string="Note">
               <field
-                name="note"
-                colspan="4"
-                nolabel="1"
-                placeholder="Add note here ..."
-              />
+                                name="note"
+                                colspan="4"
+                                nolabel="1"
+                                placeholder="Add note here ..."
+                            />
             </page>
           </notebook>
         </sheet>
