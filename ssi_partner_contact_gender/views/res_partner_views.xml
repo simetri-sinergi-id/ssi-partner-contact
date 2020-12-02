@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2020 OpenSynergy Indonesia
+     Copyright 2020 Simetri Sinergi
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_partner_view_form" model="ir.ui.view">
+        <field name="name">res.partner form gender</field>
+        <field name="model">res.partner</field>
+        <field
+            name="inherit_id"
+            ref="ssi_partner_personal_information_page.res_partner_view_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='personal_information']" position="inside">
+                <field name="gender" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
