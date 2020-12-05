@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings form - Contact Configuration</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="1" />
+            <field name="inherit_id" ref="base.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div
+                        class="app_settings_block"
+                        data-string="Contact"
+                        string="Contact"
+                        data-key="contacts"
+                    >
+                        <h2>Additional Information for Individual Contact</h2>
+                        <div class="row mt16 o_settings_container">
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_contact_birthdate" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_birthdate" />
+                                  <div class="text-muted">
+                                      Place and Date of Birth
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_contact_blood_type" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_blood_type" />
+                                  <div class="text-muted">
+                                      Blood Type
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_contact_ethnicity" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_ethnicity" />
+                                  <div class="text-muted">
+                                      Ethnicity
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_contact_gender" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_gender" />
+                                  <div class="text-muted">
+                                      Gender
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_contact_language" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_language" />
+                                  <div class="text-muted">
+                                      Language Proficiency
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field
+                                        name="module_ssi_partner_contact_nationality"
+                                    />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_nationality" />
+                                  <div class="text-muted">
+                                      Nationality
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_contact_religion" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_contact_religion" />
+                                  <div class="text-muted">
+                                      Religion
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field name="module_ssi_partner_emergency_contact" />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label for="module_ssi_partner_emergency_contact" />
+                                  <div class="text-muted">
+                                      Emergency Contact
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <h2>Additional Information for Company Contact</h2>
+                        <div class="row mt16 o_settings_container">
+                          <div class="col-12 col-lg-6 o_setting_box">
+                              <div class="o_setting_left_pane">
+                                  <field
+                                        name="module_ssi_partner_company_ownership_type"
+                                    />
+                              </div>
+                              <div class="o_setting_right_pane">
+                                  <label
+                                        for="module_ssi_partner_company_ownership_type"
+                                    />
+                                  <div class="text-muted">
+                                      Ownership Type
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
